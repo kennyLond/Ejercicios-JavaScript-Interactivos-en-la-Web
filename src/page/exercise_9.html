@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta charset para asegurar que los caracteres especiales se muestren correctamente -->
+    <meta charset="UTF-8">
+    
+    <!-- Meta viewport para que la página sea responsiva en diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlace al archivo CSS para el estilo de la página -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Enlace a los archivos JavaScript, usando defer para que se carguen después del contenido HTML -->
+    <script src="../js/funtion.js" defer></script> 
+    <script src="../js/boton.js" defer></script>
+    
+    <!-- Icono que aparece en la pestaña del navegador -->
+    <link rel="icon" type="img/png" href="../img/icons/js.png">
+    
+    <!-- Título de la página -->
+    <title>Aprende JavaScript </title>
+</head>
+
+<body>
+    <main> 
+        <!-- Encabezado de la página con logo y título -->
+        <header>
+            <img src="../img/logo/logo.png" class="logo">
+            <h1>Aprende <span>JavaScript</span></h1>
+            <h3>Con Ejercicios sencillos para mejorar tu lógica</h3>
+        </header>
+        
+        <!-- Menú de navegación para los ejercicios -->
+        <div id="menu">
+            <!-- Enlace para regresar al ejercicio anterior -->
+            <a class="menu_letf" href="exercise_8.html">Ejercicio Anterior</a>
+            <!-- Enlace para ir a la página principal -->
+            <a class="menu_center" href="../../index.html">Página Principal</a>
+            <!-- Enlace para ir al siguiente ejercicio -->
+            <a class="menu_rigth" href="exercise_10.html">Ejercicio Siguiente</a>
+        </div>
+        
+        <!-- Descripción del ejercicio -->
+        <div>
+            <p><span>Ejercicio 9</span><br>Crea una función que tome dos números como parámetros y devuelva un array con todos los números pares entre ellos.</p>
+        </div>
+
+        <!-- Contenedor principal del ejercicio -->
+        <div class="container_exercise">
+            <!-- Enlace para ver ayuda con una imagen -->
+            <div class="box_exercise">  
+                <a class="link_img" href="../img/exercises/img_exercise_9.png" target="_blank">¿Necesitas ayuda?<br>Dale un vistazo a este enlace</a>
+            </div>
+
+            <!-- Área donde el usuario puede escribir su código JavaScript -->
+            <div class="box_textArea">
+                <!-- Textarea para que el usuario escriba su código -->
+                <textarea id="code" rows="0" cols="40" placeholder="Escribe tu código JavaScript aquí..."></textarea><br>
+                
+                <!-- Botón que ejecutará el código escrito por el usuario -->
+                <button class="buttoncod" type="button" onclick="runCode()">Ejecutar Código</button>
+            </div>
+            
+            <!-- Área para mostrar el resultado del código en un iframe -->
+            <div class="box_iframe">
+                <!-- El iframe muestra el resultado del código ejecutado -->
+                <iframe class="iframe" id="output" style="width: 100%; height: 200px;"></iframe>
+            </div>      
+        </div>
+
+        <!-- Pie de página con derechos reservados -->
+        <footer>
+            <p>&copy; 2024 Kenny Londoño. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>

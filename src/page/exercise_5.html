@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Definición de la codificación de caracteres UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Asegura que la página sea responsiva en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlace a la hoja de estilo CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Enlace a los archivos JavaScript necesarios -->
+    <script src="../js/funtion.js" defer></script> 
+    <script src="../js/boton.js" defer></script>
+    
+    <!-- Icono que aparecerá en la pestaña del navegador -->
+    <link rel="icon" type="img/png" href="../img/icons/js.png">
+    
+    <!-- Título de la página -->
+    <title>Aprende JavaScript </title>
+</head>
+
+<body>
+    <main> 
+        <!-- Encabezado de la página -->
+        <header>
+            <!-- Logo de la página -->
+            <img src="../img/logo/logo.png" class="logo">
+            <!-- Título principal -->
+            <h1>Aprende <span>JavaScript</span></h1>
+            <!-- Subtítulo -->
+            <h3>Con Ejercicios sencillos para mejorar tu lógica</h3>
+        </header>
+        
+        <!-- Menú de navegación -->
+        <div id="menu">
+            <!-- Enlace para regresar al ejercicio anterior -->
+            <a class="menu_letf" href="exercise_4.html">Ejercicio Anterior</a>
+            <!-- Enlace para volver a la página principal -->
+            <a class="menu_center" href="../../index.html">Página Principal</a>
+            <!-- Enlace para avanzar al siguiente ejercicio -->
+            <a class="menu_rigth" href="exercise_6.html">Ejercicio Siguiente</a>
+        </div>
+        
+        <!-- Descripción del ejercicio -->
+        <div>
+            <p><span>Ejercicio 5</span><br>Escribe una función que convierta una temperatura dada en grados Celsius a grados Fahrenheit. La fórmula para la conversión es: Fahrenheit = (Celsius * 9/5) + 32.</p>
+        </div>
+
+        <!-- Contenedor principal del ejercicio -->
+        <div class="container_exercise">
+            <!-- Enlace para ver un ejemplo de ayuda -->
+            <div class="box_exercise">  
+                <a class="link_img" href="../img/exercises/img_exercise_5.png" target="_blank">¿Necesitas ayuda?<br>Dale un vistazo a este enlace</a>
+            </div>
+
+            <!-- Área donde el usuario puede escribir su código JavaScript -->
+            <div class="box_textArea">
+                <!-- Textarea para escribir código -->
+                <textarea id="code" rows="0" cols="40" placeholder="Escribe tu código JavaScript aquí..."></textarea><br>
+                
+                <!-- Botón para ejecutar el código ingresado -->
+                <button class="buttoncod" type="button" onclick="runCode()">Ejecutar Código</button>
+            </div>
+            
+            <!-- Área donde se mostrará el resultado del código -->
+            <div class="box_iframe">
+                <!-- Iframe para mostrar el resultado -->
+                <iframe class="iframe" id="output" style="width: 100%; height: 200px;"></iframe>
+            </div>      
+        </div>
+
+        <!-- Pie de página con derechos reservados -->
+        <footer>
+            <p>&copy; 2024 Kenny Londoño. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>

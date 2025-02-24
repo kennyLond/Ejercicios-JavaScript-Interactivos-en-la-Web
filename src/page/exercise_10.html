@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Codificación de caracteres para soportar acentos y caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Configuración para hacer el diseño responsivo en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Vinculación del archivo CSS para aplicar los estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Vinculación de archivos JavaScript, con defer para cargar después del HTML -->
+    <script src="../js/funtion.js" defer></script> 
+    <script src="../js/boton.js" defer></script>
+
+    <!-- Favicon de la página -->
+    <link rel="icon" type="img/png" href="../img/icons/js.png">
+
+    <!-- Título de la página -->
+    <title>Aprende JavaScript</title>
+</head>
+
+<body>
+    <main>
+        <!-- Cabecera de la página con logo, título y subtítulo -->
+        <header>
+            <img src="../img/logo/logo.png" class="logo">
+            <h1>Aprende <span>JavaScript</span></h1>
+            <h3>Con Ejercicios sencillos para mejorar tu lógica</h3>
+        </header>
+
+        <!-- Menú de navegación -->
+        <div id="menu">
+            <!-- Enlace al ejercicio anterior -->
+            <a class="menu_letf" href="exercise_9.html">Ejercicio Anterior</a>
+            <!-- Enlace a la página principal -->
+            <a class="menu_center" href="../../index.html">Página Principal</a>
+        </div>
+
+        <!-- Descripción del ejercicio -->
+        <div>
+            <p>
+                <span>Ejercicio 10</span><br>
+                Crea un objeto con el nombre `toDoList` que tenga las siguientes propiedades y valores:
+                <ul>
+                    <li>Tipo de tarea: un string que diga "Compras" (recuerda usar comillas si hay espacios en el nombre de la propiedad).</li>
+                    <li>Día: un string que indique el día de realizar la tarea.</li>
+                    <li>Productos: un array con los nombres de los productos.</li>
+                    <li>Cantidad de productos: un número que indica la cantidad total de productos de las compras (recuerda manejar los espacios en el nombre de la propiedad).</li>
+                    <li>Estado: "pendiente".</li>
+                    <li>
+                        Notificación: un método (función) que haga una alerta con el siguiente mensaje: 
+                        <strong>"Esta tarea tiene una prioridad urgente!"</strong>
+                    </li>
+                </ul>
+                <p>Extrae estos valores desde la consola de las siguientes formas:</p>
+                <ul>
+                    <li>El día de la compra usando dot notation.</li>
+                    <li>El tipo de tarea usando bracket notation.</li>
+                    <li>La cantidad de productos usando bracket notation.</li>
+                    <li>Ejecuta el método (función) de la propiedad notificación.</li>
+                </ul>
+            </p>
+        </div>
+
+        <!-- Contenedor principal del ejercicio -->
+        <div class="container_exercise">
+            <!-- Enlace para ayuda con una imagen -->
+            <div class="box_exercise">  
+                <a class="link_img" href="../img/exercises/img_exercise_10.png" target="_blank">
+                    ¿Necesitas ayuda?<br>Dale un vistazo a este enlace
+                </a>
+            </div>
+
+            <!-- Área para que el usuario escriba su código -->
+            <div class="box_textArea">
+                <textarea id="code" rows="0" cols="40" placeholder="Escribe tu código JavaScript aquí..."></textarea><br>
+                <button class="buttoncod" type="button" onclick="runCode()">Ejecutar Código</button>
+            </div>
+
+            <!-- Área para mostrar el resultado del código -->
+            <div class="box_iframe">
+                <iframe class="iframe_none" id="output" style="width: 100%; height: 200px;"></iframe>
+            </div>      
+        </div>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2024 Kenny Londoño. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>

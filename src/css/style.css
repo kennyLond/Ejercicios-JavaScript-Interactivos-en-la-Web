@@ -1,0 +1,218 @@
+/* Estilo global para todas las etiquetas */
+* {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente predeterminada */
+}
+
+/* Configuración general del documento */
+html, body {
+    height: 100%; /* El documento ocupa toda la altura */
+    margin: 0; /* Sin márgenes externos */
+    padding: 0; /* Sin relleno interno */
+    display: flex; /* Usa modelo flexbox */
+    background-color: #13111c; /* Fondo oscuro */
+    flex-direction: column; /* Alineación vertical */
+}
+
+/* Encabezado de la página */
+header {
+    text-align: center; /* Centra el texto */
+    margin-top: 60px; /* Espacio superior */
+}
+
+span {
+    color: #f7e025; /* Resalta con amarillo */
+}
+
+.logo {
+    height: 80px; /* Altura fija */
+    width: 80px; /* Ancho fijo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Colores del texto en encabezados y listas */
+h1, h3, li {
+    color: white; /* Texto blanco */
+}
+
+/* Contenedor principal para la estructura */
+.container {
+    display: flex;
+    flex-direction: row; /* Elementos alineados en fila */
+    height: 600px; /* Altura fija */
+}
+
+.box {
+    width: 60%; /* Ocupa el 60% del contenedor */
+    text-align: center; /* Centrado de texto */
+    margin: auto; /* Centrado automático */
+}
+
+.title_left {
+    font-size: clamp(20px, 3vw, 30px); /* Tamaño adaptable */
+    margin-bottom: 70px; /* Separación inferior */
+}
+
+/* Lista dentro de los contenedores */
+.box li {
+    font-size: clamp(11px, 2vw, 20px); /* Tamaño adaptable */
+    text-align: left; /* Alineación a la izquierda */
+    margin: 15px 100px; /* Espaciado interno */
+}
+
+/* Tarjetas izquierda y derecha */
+.card_letf, .card_rigth {
+    display: flex;
+    width: 20%; /* Ocupa el 20% del ancho */
+    text-align: center;
+    margin: auto; /* Centrado automático */
+    flex-direction: column; /* Alineación vertical */
+}
+
+/* Estilo para ejercicios */
+.ejercicio {
+    padding: 20px; /* Espaciado interno */
+    margin: 15px; /* Espaciado externo */
+}
+
+.exercise {
+    background-color: #f7e025; /* Fondo amarillo */
+    display: inline-block;
+    padding: 5px; /* Relleno interno */
+    margin: 10px; /* Espaciado externo */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.exercise:hover {
+    background-color: white; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilo para enlaces */
+a {
+    display: block; /* Bloque completo */
+    color: #13111c; /* Texto oscuro */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    font-size: clamp(15px, 3vw, 20px); /* Tamaño adaptable */
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    background-color: #f7e018; /* Fondo amarillo */
+    height: 70px; /* Altura fija */
+    text-align: center;
+    margin-top: auto; /* Posición al final */
+}
+
+footer p {
+    display: inline-block;
+    margin: 25px auto; /* Espaciado */
+    font-weight: bold; /* Texto en negrita */
+    color: #13111c; /* Texto oscuro */
+    font-size: 15px; /* Tamaño fijo */
+}
+
+/* Contenedor para ejercicios */
+.container_exercise {
+    display: flex;
+    flex: 1; /* Ocupa el espacio restante */
+    flex-direction: row; /* Alineación horizontal */
+    height: 400px;
+
+}
+
+/* Texto en ejercicios */
+p {
+    color: white; /* Texto blanco */
+    margin: 20px 20px; /* Espaciado */
+    font-size: 20px; /* Tamaño fijo */
+    line-height: 30px; /* Altura de línea */
+}
+
+/* Menú superior */
+#menu {
+    display: flex;
+    background-color: #f7e025; /* Fondo amarillo */
+    border-radius: 20px; /* Bordes redondeados */
+    justify-content: space-between; /* Distribución uniforme */
+    padding: 5px; /* Espaciado interno */
+}
+
+/* Estilos específicos del menú */
+.menu_letf, .menu_center, .menu_rigth {
+    color: #13111c; /* Texto oscuro */
+    padding: 5px; /* Relleno interno */
+}
+
+/* Contenedor para ejercicios individuales */
+.box_exercise {
+    width: 33%; /* Cada caja ocupa un tercio del ancho */
+}
+
+/* Imagen dentro del ejercicio */
+#img_exercise {
+    display: flex;
+    margin: 50px auto; /* Centrado con margen */
+    width: 80%; /* Tamaño proporcional */
+    height: 40%; 
+}
+
+/* Contenedor para el área de texto */
+.box_textArea {
+    width: 33%; /* Ocupa un tercio del ancho */
+    display: flexbox;
+}
+
+#code {
+    display: flex;
+    margin: auto; /* Centrado automático */
+    font-size: 15px; /* Tamaño de fuente */
+    width: 80%; /* Ancho relativo */
+    height: 70%; /* Altura relativa */
+    outline: none; /* Sin borde al enfocarse */
+    resize: none; /*No permite al ususario ajustar el tamaño*/
+}
+
+/* Botón de ejecución */
+.buttoncod {
+    display: flex;
+    margin: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    background-color: #13111c; /* Fondo oscuro */
+    border: none; /* Sin bordes */
+    color: white; /* Texto blanco */
+}
+
+.buttoncod:hover {
+    background-color: #f7e018; /* Fondo amarillo al pasar el mouse */
+    color: #13111c; /* Texto oscuro */
+}
+
+/* Contenedor del iframe */
+.box_iframe {
+    width: 33%; /* Ocupa un tercio del ancho */
+    display: flexbox;
+}
+
+/* Estilo para iframe oculto y visible */
+.iframe_none {
+    display: none; /* Ocultar iframe */
+}
+
+.iframe {
+    display: flex;
+    margin-top: 20px;
+    background-color: white; /* Fondo blanco */
+    font-size: 20px; /* Tamaño de texto */
+    width: 70%;
+    height: 50%;
+}
+
+/* Enlace con estilo para imágenes */
+.link_img {
+    color: #f7e018; /* Texto amarillo */
+    margin: 100px 40px; /* Espaciado */
+    display: inline-block;
+    margin-left: 10vw;
+}

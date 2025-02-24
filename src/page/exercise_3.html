@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta charset para asegurar la correcta codificación en UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Meta viewport para asegurar que la página sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Enlace a los archivos de JavaScript con "defer" para cargar después del contenido HTML -->
+    <script src="../js/boton.js" defer></script> 
+    <script src="../js/funcion_none_.js" defer></script>
+    
+    <!-- Icono de la página -->
+    <link rel="icon" type="img/png" href="../img/icons/js.png">
+    
+    <!-- Título de la página -->
+    <title>Aprende JavaScript </title>
+</head>
+
+<body>
+    <main> 
+        <!-- Encabezado de la página con logo y título -->
+        <header>
+            <img src="../img/logo/logo.png" class="logo">
+            <h1>Aprende <span>JavaScript</span></h1>
+            <h3>Con Ejercicios sencillos para mejorar tu lógica</h3>
+        </header>
+        
+        <!-- Menú de navegación con enlaces para ir a otras páginas -->
+        <div id="menu">
+            <!-- Enlace para regresar al ejercicio anterior -->
+            <a class="menu_letf" href="exercise_2.html">Ejercicio Anterior</a>
+            <!-- Enlace para regresar a la página principal -->
+            <a class="menu_center" href="../../index.html">Página Principal</a>
+            <!-- Enlace para ir al siguiente ejercicio -->
+            <a class="menu_rigth" href="exercise_4.html">Ejercicio Siguiente</a>
+        </div>
+        
+        <!-- Descripción del ejercicio -->
+        <div>
+            <p><span>Ejercicio 3</span><br>3 variables: numero1, numero2 y resultado.
+                Pídele al usuario que ingrese los valores de las variables numero1 y numero2 mediante un prompt(). 
+                Asigna a la variable resultado el valor de la suma entre numero1 y numero2. 
+                Muestra una alerta con el mensaje “El resultado es: (resultado)”. </p>
+        </div>
+
+        <!-- Contenedor principal del ejercicio -->
+        <div class="container_exercise">
+            <!-- Enlace para ver ayuda con una imagen del ejercicio -->
+            <div class="box_exercise">  
+                <a class="link_img" href="../img/exercises/img_exercise_3.png" target="_blank">¿Necesitas ayuda?<br>Dale un vistazo a este enlace</a>
+            </div>
+
+            <!-- Área donde el usuario puede escribir su código JavaScript -->
+            <div class="box_textArea">
+                <!-- Textarea para escribir el código JavaScript -->
+                <textarea id="code" rows="0" cols="40" placeholder="Escribe tu código JavaScript aquí..."></textarea><br>
+                
+                <!-- Botón para ejecutar el código -->
+                <button class="buttoncod" type="button" onclick="runCode()">Ejecutar Código</button>
+            </div>
+            
+            <!-- Área para mostrar el resultado del código ejecutado en un iframe -->
+            <div class="box_iframe">
+                <!-- El iframe está inicialmente oculto (clase "iframe_none") y se usa para mostrar la salida del código -->
+                <iframe class="iframe_none" id="output" style="width: 100%; height: 200px;"></iframe>
+            </div>      
+        </div>
+
+        <!-- Pie de página con derechos reservados -->
+        <footer>
+            <p>&copy; 2024 Kenny Londoño. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>

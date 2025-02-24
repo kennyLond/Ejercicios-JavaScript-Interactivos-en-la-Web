@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta charset para codificación en UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Meta viewport para hacer la página responsive y adaptarse a diferentes tamaños de pantalla -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlace al archivo de estilo CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Enlace a los archivos JavaScript con defer para que se carguen después del contenido HTML -->
+    <script src="../js/boton.js" defer></script>
+    <script src="../js/funcion_none_.js" defer></script>
+    
+    <!-- Icono de la página -->
+    <link rel="icon" type="img/png" href="../img/icons/js.png">
+    
+    <!-- Título de la página -->
+    <title>Aprende JavaScrip </title>
+</head>
+
+<body>
+    <main> 
+        <!-- Encabezado de la página con logo y título -->
+        <header>
+            <img src="../img/logo/logo.png" class="logo">
+            <h1>Aprende <span>JavaScript</span></h1>
+            <h3>Con Ejercicios sencillos para mejorar tu logica</h3>
+        </header>
+        
+        <!-- Menú de navegación con enlaces a otras páginas -->
+        <div id="menu">
+            <!-- Enlace para regresar al ejercicio anterior -->
+            <a class="menu_letf" href="exersice_1.html">Ejercicio Anterior</a>
+            <!-- Enlace para volver a la página principal -->
+            <a class="menu_center" href="../../index.html">Pagina Principal</a>
+            <!-- Enlace para pasar al siguiente ejercicio -->
+            <a class="menu_rigth" href="exercise_3.html">Ejercicio Siguiente</a>
+        </div>
+        
+        <!-- Descripción del ejercicio -->
+        <div>
+            <p><span>Ejercicio 2</span><br>Esta vez deberemos asignarle el método prompt() para que sea el usuario quien introduzca los datos, nombre y apellido. Mostrar una alerta de bienvenida a nuestra página con el nombre y el apellido del usuario “Bienvenido a nuestra página (nombre+apellido)” </p>
+        </div>
+
+        <!-- Contenedor principal del ejercicio -->
+        <div class="container_exercise">
+            <!-- Enlace a la imagen del ejercicio en caso de necesitar ayuda -->
+            <div class="box_exercise">  
+                <a class="link_img" href="../img/exercises/img_exercise_2.png" target="_blank">¿Necesitas ayuda?<br>Dale un vistazo a este enlace</a>
+            </div>
+
+            <!-- Área donde el usuario puede escribir su código JavaScript -->
+            <div class="box_textArea">
+                <!-- Textarea donde los usuarios escriben su código JavaScript -->
+                <textarea id="code" rows="0" cols="40" placeholder="Escribe tu código JavaScript aquí..."></textarea><br>
+                <!-- Botón para ejecutar el código -->
+                <button class="buttoncod" type="button" onclick="runCode()"><b>Ejecutar Código</b></button>
+            </div>
+            
+            <!-- Área para mostrar el resultado del código ejecutado en un iframe -->
+            <div class="box_iframe">
+                <!-- El iframe está inicialmente oculto (clase "iframe_none") y se usará para mostrar la salida del código -->
+                <iframe class="iframe_none" id="output" style="width: 100%; height: 200px;"></iframe>
+            </div>      
+        </div>
+
+        <!-- Pie de página con derechos reservados -->
+        <footer>
+            <p>&copy; 2024 Kenny Londoño. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>
