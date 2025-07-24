@@ -1,7 +1,7 @@
 
 ## AUTOR
 Kenny Orlando Londoño Torrado – Desarrollador Frontend Jr.  
-([@kennyLond](https://github.com/kennyLond/Ejercicios-JavaScript-Interactivos-en-la-Web))
+
 
 # Aprende JavaScript con Ejercicios Interactivos
 
@@ -39,8 +39,8 @@ Desarrollar una plataforma que permita a los usuarios:
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/kennyLond/Ejercicios-JavaScript-Interactivos-en-la-Web
-cd Ejercicios-JavaScript-Interactivos-en-la-Web
+git clone https://github.com/kennyLond/ejercicios-javascript-interactivos
+cd ejercicios-javascript-interactivos
 ```
 
 ### Abrir el proyecto
